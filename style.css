@@ -1,0 +1,82 @@
+/* Réinitialisation de la marge et du remplissage du corps */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Couleur de fond légère */
+}
+
+/* En-tête stylisé */
+h1 {
+    text-align: center;
+    background-color: #007BFF; /* Couleur de fond pour l'en-tête */
+    color: white; /* Couleur du texte pour l'en-tête */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Couleur de fond du contenu principal */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour du contenu */
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style des boutons */
+button {
+    background-color: #007BFF; /* Couleur de fond des boutons */
+    color: white; /* Couleur du texte des boutons */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style de la liste des tâches */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff; /* Couleur de fond des tâches */
+    transition: background-color 0.2s ease-in-out; /* Transition en douceur pour la couleur de fond */
+}
+
+/* Style pour les tâches terminées */
+.completed {
+    background-color: #d3ffd3;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Style des boutons de modification et de suppression */
+.edit-btn, .delete-btn {
+    background-color: #f44336; /* Couleur de fond pour les boutons de modification et de suppression */
+    margin-right: 5px;
+}
+
+/* Style pour les boutons de modification et de suppression au survol */
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #d32f2f;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Tâches - Simplon Sénégal</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Gestion des Tâches</h1>
+    <form id="task-form">
+        <label for="task-title">Titre :</label>
+        <input type="text" id="task-title" required>
+        <label for="task-description">Description :</label>
+        <textarea id="task-description" rows="4"></textarea>
+        <label for="task-deadline">Date limite :</label>
+        <input type="date" id="task-deadline" required>
+        <label for="task-priority">Priorité :</label>
+        <select id="task-priority">
+            <option value="Faible">Faible</option>
+            <option value="Moyenne">Moyenne</option>
+            <option value="Forte">Forte</option>
+        </select>
+        <button type="submit">Ajouter une tâche</button>
+    </form>
+    <ul id="task-list">
+        <!-- Les tâches seront affichées ici -->
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>
