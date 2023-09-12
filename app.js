@@ -67,7 +67,6 @@ taskList.addEventListener("click", function (e) {
                 <option value="Forte" ${currentPriority === "Forte" ? "selected" : ""}>Forte</option>
             </select>
             <button type="submit">Enregistrer</button>
-            <button class="cancel-btn">Annuler</button>
         `;
 
         // Remplacez l'élément de tâche par le formulaire de modification
@@ -107,20 +106,5 @@ taskList.addEventListener("submit", function (e) {
 
         // Réinitialisez le formulaire de modification
         e.target.reset();
-    }
-});
-
-// Écoutez les clics sur les boutons "Annuler" dans le formulaire de modification
-taskList.addEventListener("click", function (e) {
-    if (e.target.classList.contains("cancel-btn")) {
-        // Récupérez l'élément de tâche parent
-        const taskItem = e.target.parentElement;
-
-        // Remplacez le formulaire de modification par l'élément de tâche d'origine
-        const originalTaskItem = document.createElement("li");
-        originalTaskItem.innerHTML = taskItem.innerHTML;
-
-        // Remplacez le formulaire de modification par l'élément de tâche d'origine
-        taskList.replaceChild(originalTaskItem, taskItem);
     }
 });
